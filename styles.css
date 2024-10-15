@@ -3,7 +3,7 @@
   padding: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .siteContent {
@@ -13,9 +13,7 @@
 
 /* All content in top container */
 .topcontent {
-  background-color: aliceblue;
-  width: 1000px;
-  height: 350px;
+  background-color: #1f2937;
   display: flex;
   flex-direction: column;
 }
@@ -23,9 +21,15 @@
 /* All header content */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: red;
+  background-color: #1f2937;
+}
+
+.header p {
+  font-size: 24px;
+  color: #f9faf8;
+  text-align: center;
 }
 
 .headerlinks {
@@ -35,63 +39,76 @@
   padding: 10px;
 }
 
+.headerlinks p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
 /* All content under header */
 
 .underHeader {
-    margin-top: 40px;
+  margin-top: 70px;
   display: flex;
   padding: 10px;
-  
+  height: 400px;
+  justify-content: center;
+  gap: 5px;
 }
 
 .topcontentleft {
-  background-color: rgb(168, 110, 226);
+  background-color: #1f2937;
   width: 300px;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex: auto;
-  
-  
+  align-items: start;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  margin-left: 100px;
 }
 .topcontentleft .hero {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-    flex-shrink: 1;
-    flex-grow: 0;
-    
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
 }
 
 .topcontentleft .secondary {
-    font-size: 18px;
-    color: #E5E7EB;
-    flex-wrap: wrap;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .topcontentleft button {
-    background-color: #3882F6;
-    border: none;
-    margin-bottom: 10px;
-    color: #E5E7EB;
-    width: 100px;
-    height: 50px
+  background-color: #3882f6;
+  border: none;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+  padding: 10px 20px;
 }
 
 .topcontentleft .button {
-   
-   flex-wrap: wrap;
-    
+  flex-wrap: wrap;
 }
 
 .topcontentright {
-  background-color: rebeccapurple;
+  background-color: #1f2937;
   width: 300px;
-  height: 200px;
-  flex: 1 1 auto;
+  height: 250px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
 }
+
+.topcontentright .image {
+  background-color: #e5e7eb;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 /* Second container info */
 .infocontent {
@@ -99,6 +116,10 @@
   width: 1000px;
   height: 300px;
 }
+
+
+
+
 
 /* third container info */
 .qoutecontent {
