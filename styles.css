@@ -42,6 +42,7 @@
 .headerlinks p {
   font-size: 18px;
   color: #e5e7eb;
+  cursor: pointer;
 }
 /* All content under header */
 
@@ -57,7 +58,7 @@
 .topcontentleft {
   background-color: #1f2937;
   width: 300px;
-  height: 250px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +66,7 @@
   flex: 1 1 0;
   flex-wrap: wrap;
   margin-left: 100px;
+  gap: 10px;
 }
 .topcontentleft .hero {
   font-size: 48px;
@@ -82,7 +84,10 @@
   border: none;
   margin-bottom: 10px;
   color: #e5e7eb;
-  padding: 10px 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .topcontentleft .button {
@@ -100,11 +105,15 @@
 }
 
 .topcontentright .image {
-  background-color: #e5e7eb;
+  background-color: #7b7b7c;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.imagep p {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 /* Second container info */
@@ -116,6 +125,11 @@
   flex: 1;
 }
 
+.infohead {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
 .infocontent p {
   text-align: center;
   flex-wrap: wrap;
@@ -144,6 +158,7 @@
   height: 180px;
   outline-style: solid;
   outline-color: #3882f6;
+  border-radius: 10px;
 }
 
 .boxes p {
@@ -167,14 +182,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .maintext {
   height: 200px;
   width: 629px;
-  
 }
 
 .maintext p {
@@ -186,22 +198,81 @@
 }
 
 .maintextname {
-    align-self: flex-end;
-    
+  align-self: flex-end;
 }
 
 .maintextname p {
-    font-weight: 900;
+  font-weight: 900;
+  color: #313131;
 }
 
 /* Bottom content  */
+
 .bottomcontent {
-  background-color: rgb(171, 204, 170);
-  width: 1000px;
-  height: 200px;
+  background-color: #f9faf8;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.callToActionContainer {
+  display: flex;
+  width: 800px;
+  height: 150px;
+  background-color: #3882f6;
+  border-radius: 20px;
+}
+
+.callToActionContainer.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex: 2;
+  padding-left: 50px;
+}
+
+.callToActionContainer.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.callToActionContainer button {
+  padding: 4px 20px;
+  background-color: #3882f6;
+  border-color: #e5e7eb;
+  border-style: solid;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.callToActionContainer .first {
+  font-size: 18px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.callToActionContainer p {
+  align-items: center;
+  color: #e5e7eb;
 }
 
 /* Footer content */
 .Fottercontent {
-  background-color: rgb(196, 136, 231);
+  height: 125px;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotterContainer p {
+  color: #e5e7eb;
+  font-size: 18px;
 }
